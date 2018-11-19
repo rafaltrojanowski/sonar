@@ -1,14 +1,13 @@
 defmodule Sonar do
 
   @path_env %{dev: "sl2tocsv.csv", test: "sl2tocsv_test.csv"}
-  @path Path.join(["lib", @path_env[Mix.env]])
   @separator " "
   @eol ";\n"
 
   defstruct last_id: 0, locations: %{}
 
   def init do
-    @path
+    Path.join(["lib", @path_env[Mix.env]])
       |> read_file!
       |> format
   end
