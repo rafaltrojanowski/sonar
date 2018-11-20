@@ -1,6 +1,6 @@
 # Sonar
 
-Data visialization app, that shows ocean depth in meters for particular locations.
+Dependency for Data visialization app, that shows ocean depth in meters for particular locations.
 
 Inspired by: https://github.com/Chris78/sl2decode
 
@@ -9,7 +9,7 @@ Use sl2decode to retrieve data in csv format.
 TODO:
 
 - Add CSV Import and listing data
-- Data visualization (map?)
+- Data visualization on map
 - Add direct import from SL2 (decode files)
 - Prevent duplicated entries in database
 
